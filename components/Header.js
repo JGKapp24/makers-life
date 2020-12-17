@@ -6,14 +6,14 @@ export default function Header () {
     <>
     {/* Small Screens */}
       <div
-        className="flex flex-row-reverse items-center py-3 px-6 bg-black text-gray-50"
+        className="flex md:flex-row-reverse items-center h-12 bg-transparent text-gray-50"
       >
         <Menu>
           {({ open }) => (
-            <div className="relative inline-block text-left">
+            <div className="relative inline-block h-full w-full md:w-auto py-2 text-left bg-black">
               <Menu.Button
                 className={`
-                  inline-flex justify-center w-xm items-center rounded-md border-0 px-3 text-sm font-medium text-gray-50
+                  inline-flex justify-center items-center h-full rounded-md border-0 px-3 text-sm font-medium text-gray-50
                   bg-black hover:bg-gray-900 focus:bg-gray-900 focus:outline-none focus:ring-1 focus:ring-offset-2
                   focus:ring-offset-gray-800 focus:ring-blue-800
                 `}
@@ -34,8 +34,9 @@ export default function Header () {
               >
                 <Menu.Items static
                   className={`
-                    origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black
-                    ring-opacity-5 divide-y divide-gray-200 text-black focus:outline-none focus:ring-1 focus:ring-blue-400
+                    absolute origin-top-left left-0 md:origin-top-right md:right-0 md:left-auto mt-2 w-48 rounded-md shadow-lg
+                    bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-200 text-black
+                    focus:outline-none focus:ring-1 focus:ring-blue-400
                   `}
                 >
                   <div className="flex flex-col py-1">
@@ -121,6 +122,38 @@ export default function Header () {
             </div>
           )}
         </Menu>
+        <div className="hidden md:grid grid-cols-6 w-full h-full font-bold">
+          <button className={`
+            bg-gray-50 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-200 text-black
+          `}>
+            Blog
+          </button>
+          <button className={`
+            bg-gray-50 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-200 text-black
+          `}>
+            Podcast
+          </button>
+          <button className={`
+            bg-gray-50 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-200 text-black
+          `}>
+            Challenges
+          </button>
+          <button className={`
+            bg-black hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-300
+          `}>
+            Services
+          </button>
+          <button className={`
+            bg-black hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-300
+          `}>
+            Resources
+          </button>
+          <button className={`
+            bg-black hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-300
+          `}>
+            Search
+          </button>
+        </div>
       </div>
     </>
   );
