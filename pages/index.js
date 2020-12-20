@@ -3,7 +3,7 @@ import Header from '../components/Header';
 
 export default function Home () {
   return (
-    <div>
+    <div className="w-full h-full">
       <Head>
         <title>Makers Life</title>
         <link rel="icon" href="/favicon.ico" />
@@ -12,9 +12,18 @@ export default function Home () {
       <Header />
 
       <main>
-        <h1 className="text-5xl">
-          MAKERS LIFE
-        </h1>
+        <div className="">
+          <div className="w-full p-8 md:py-10 md:px-20 text-5xl md:text-8xl font-extrabold tracking-wider">
+            MAKERS <br/>
+            LIFE
+            <div className="block md:inline-block w-full md:w-1/2 break-normal whitespace-pre-wrap text-base md:text-xl font-semibold md:font-bold tracking-normal">
+              A Renaissance <br className="hidden md:block" />
+              mission for <br className="hidden md:block" />
+              modern times
+            </div>
+          </div>
+
+        </div>
       </main>
 
       {/* <footer>
