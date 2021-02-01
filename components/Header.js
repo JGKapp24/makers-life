@@ -40,7 +40,7 @@ export default function Header () {
       </div>
       <Menu>
         {({ open }) => (
-          <div className="relative inline-block h-full w-full md:w-auto text-left bg-black">
+          <div className="z-10 relative inline-block h-full w-full md:w-auto text-left bg-black">
             <Menu.Button
               className={`
                 inline-flex justify-center items-center h-full rounded-md border-0 px-3 text-sm font-medium text-gray-50
