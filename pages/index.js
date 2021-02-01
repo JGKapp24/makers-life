@@ -12,8 +12,8 @@ export default function Home () {
       <Header />
 
       <main>
-        <div className="">
-          <div className="w-full p-8 md:py-10 md:px-20 text-5xl md:text-8xl font-extrabold tracking-wider">
+        <div className="relative grid grid-cols-1 p-8 md:py-10 md:px-20 justify-items-start pb-10">
+          <div className="w-full mb-10 text-5xl md:text-8xl text-gray-50 font-extrabold tracking-wider">
             MAKERS <br/>
             LIFE
             <div className="block md:inline-block w-full md:w-1/2 break-normal whitespace-pre-wrap text-base md:text-xl font-semibold md:font-bold tracking-normal">
@@ -22,7 +22,14 @@ export default function Home () {
               modern times
             </div>
           </div>
-
+          <button
+            type="button"
+            className="max-w-sm px-3 py-2 text-lg font-bold bg-gray-800 text-gray-50 focus:outline:none border border-black"
+          >
+            Weekly Note
+          </button>
+          <div className="-z-10 absolute inset-0 bg-front-page bg-cover bg-opacity-25" />
+          <div className="-z-10 absolute inset-0 bg-black bg-opacity-25" />
         </div>
       </main>
 
