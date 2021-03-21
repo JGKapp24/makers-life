@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import DoubleChevronRightIcon from '../components/icons/DoubleChevronRightIcon';
 
-export default function Home () {
+export default function Home() {
   return (
     <div className="w-full h-full">
       <Head>
@@ -19,7 +19,7 @@ export default function Home () {
           >
             <button
               type="button"
-              className="px-2 py-4 bg-gray-200 text-gray-900 shadow-md focus:outline-none hover:bg-gray-500 focus:ring ring-blue-300"
+              className="px-1 md:px-2 py-3 md:py-4 bg-gray-200 text-gray-900 shadow-md focus:outline-none hover:bg-gray-500 focus:ring ring-blue-300"
             >
               <DoubleChevronRightIcon className="transform rotate-180" />
             </button>
@@ -29,19 +29,25 @@ export default function Home () {
           >
             <button
               type="button"
-              className="px-2 py-4 bg-gray-200 text-gray-900 shadow-md focus:outline-none hover:bg-gray-500 focus:ring ring-blue-300"
+              className="px-1 md:px-2 py-3 md:py-4 bg-gray-200 text-gray-900 shadow-md focus:outline-none hover:bg-gray-500 focus:ring ring-blue-300"
             >
               <DoubleChevronRightIcon />
             </button>
           </div>
           <div>
             <div className="mb-10 text-5xl md:text-8xl text-gray-50 font-extrabold tracking-wider">
-              MAKERS <br/>
+              MAKERS
+              <br />
               LIFE
               <div className="block md:inline-block w-full md:w-1/2 break-normal
-                whitespace-pre-wrap text-base md:text-xl font-semibold md:font-bold tracking-normal">
-                A Renaissance <br className="hidden md:block" />
-                mission for <br className="hidden md:block" />
+                whitespace-pre-wrap text-base md:text-xl font-semibold md:font-bold tracking-normal"
+              >
+                A Renaissance
+                {' '}
+                <br className="hidden md:block" />
+                mission for
+                {' '}
+                <br className="hidden md:block" />
                 modern times
               </div>
             </div>
