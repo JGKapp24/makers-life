@@ -1,40 +1,58 @@
 import { Menu, Transition } from '@headlessui/react';
 import MenuIcon from './icons/MenuIcon';
 
-export default function Header () {
+export default function Header() {
   return (
-    <div
+    <header
       className="flex items-center h-12 bg-transparent text-gray-50"
     >
       <div className="hidden md:grid grid-cols-6 w-full h-full font-bold">
-        <button className={`
+        <button
+          type="button"
+          className={`
           bg-gray-50 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-200 text-black
-        `}>
+        `}
+        >
           Blog
         </button>
-        <button className={`
+        <button
+          type="button"
+          className={`
           bg-gray-50 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-200 text-black
-        `}>
+        `}
+        >
           Podcast
         </button>
-        <button className={`
+        <button
+          type="button"
+          className={`
           bg-gray-50 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-200 text-black
-        `}>
+        `}
+        >
           Challenges
         </button>
-        <button className={`
+        <button
+          type="button"
+          className={`
           bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-300
-        `}>
+        `}
+        >
           Services
         </button>
-        <button className={`
+        <button
+          type="button"
+          className={`
           bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-300
-        `}>
+        `}
+        >
           Resources
         </button>
-        <button className={`
+        <button
+          type="button"
+          className={`
           bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-300
-        `}>
+        `}
+        >
           Search
         </button>
       </div>
@@ -62,7 +80,8 @@ export default function Header () {
               leaveFrom="transform scale-100 opacity-100"
               leaveTo="transform scale-95 opacity-0"
             >
-              <Menu.Items static
+              <Menu.Items
+                static
                 className={`
                   absolute origin-top-left left-0 md:origin-top-right md:right-0 md:left-auto mt-2 w-48 rounded-md shadow-lg
                   bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-200 text-black
@@ -72,7 +91,8 @@ export default function Header () {
                 <div className="flex flex-col py-1">
                   <Menu.Item>
                     {({ active }) => (
-                      <button type="button"
+                      <button
+                        type="button"
                         className={`
                           rounded-md text-lg mx-2 p-1
                           ${active ? 'bg-gray-100 ring-1 ring-offset-1 ring-gray-400 ring-offset-gray-100' : ''}
@@ -84,7 +104,8 @@ export default function Header () {
                   </Menu.Item>
                   <Menu.Item>
                     {({ active }) => (
-                      <button type="button"
+                      <button
+                        type="button"
                         className={`
                           rounded-md text-lg mx-2 p-1
                           ${active ? 'bg-gray-100 ring-1 ring-offset-1 ring-gray-400 ring-offset-gray-100' : ''}
@@ -96,7 +117,8 @@ export default function Header () {
                   </Menu.Item>
                   <Menu.Item>
                     {({ active }) => (
-                      <button type="button"
+                      <button
+                        type="button"
                         className={`
                           rounded-md text-lg mx-2 p-1
                           ${active ? 'bg-gray-100 ring-1 ring-offset-1 ring-gray-400 ring-offset-gray-100' : ''}
@@ -110,7 +132,8 @@ export default function Header () {
                 <div className="flex flex-col py-1">
                   <Menu.Item>
                     {({ active }) => (
-                      <button type="button"
+                      <button
+                        type="button"
                         className={`
                           rounded-md text-lg mx-2 p-1
                           ${active ? 'bg-gray-100 ring-1 ring-offset-1 ring-gray-400 ring-offset-gray-100' : ''}
@@ -122,7 +145,8 @@ export default function Header () {
                   </Menu.Item>
                   <Menu.Item>
                     {({ active }) => (
-                      <button type="button"
+                      <button
+                        type="button"
                         className={`
                           rounded-md text-lg mx-2 p-1
                           ${active ? 'bg-gray-100 ring-1 ring-offset-1 ring-gray-400 ring-offset-gray-100' : ''}
@@ -136,7 +160,8 @@ export default function Header () {
                 <div className="flex flex-col py-1">
                   <Menu.Item>
                     {({ active }) => (
-                      <button type="button"
+                      <button
+                        type="button"
                         className={`
                           rounded-md text-lg mx-2 p-1
                           ${active ? 'bg-gray-100 ring-1 ring-offset-1 ring-gray-400 ring-offset-gray-100' : ''}
@@ -152,6 +177,6 @@ export default function Header () {
           </div>
         )}
       </Menu>
-    </div>
+    </header>
   );
-};
+}

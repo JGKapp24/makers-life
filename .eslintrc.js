@@ -2,11 +2,10 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true,
   },
   extends: [
     'plugin:react/recommended',
-    'standard',
+    'airbnb',
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -19,12 +18,7 @@ module.exports = {
     'react',
   ],
   rules: {
+    'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
-    'comma-dangle': ['error', 'always-multiline'],
-    semi: [2, 'always'],
-    'react/prop-types': [0],
-  },
-  globals: {
-    React: 'writable',
   },
 };
