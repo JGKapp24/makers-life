@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import Header from '../components/Header';
+import Header from '../components/Header2';
 import DoubleChevronRightIcon from '../components/icons/DoubleChevronRightIcon';
 
-export default function Home () {
+export default function Home() {
   return (
     <div className="w-full h-full">
       <Head>
@@ -13,13 +13,13 @@ export default function Home () {
       <Header />
 
       <main>
-        <div className="relative grid grid-cols-1 py-8 px-12 md:py-10 md:px-20 place-items-center pb-10">
+        <div className="relative grid grid-cols-1 px-12 py-8 pb-10 md:py-10 md:px-20 place-items-center">
           <div
             className="absolute inset-y-0 left-0 grid grid-cols-1 place-items-center"
           >
             <button
               type="button"
-              className="px-2 py-4 bg-gray-200 text-gray-900 shadow-md focus:outline-none hover:bg-gray-500 focus:ring ring-blue-300"
+              className="px-2 py-4 text-gray-900 bg-gray-200 shadow-md focus:outline-none hover:bg-gray-500 focus:ring ring-blue-300"
             >
               <DoubleChevronRightIcon className="transform rotate-180" />
             </button>
@@ -29,30 +29,36 @@ export default function Home () {
           >
             <button
               type="button"
-              className="px-2 py-4 bg-gray-200 text-gray-900 shadow-md focus:outline-none hover:bg-gray-500 focus:ring ring-blue-300"
+              className="px-2 py-4 text-gray-900 bg-gray-200 shadow-md focus:outline-none hover:bg-gray-500 focus:ring ring-blue-300"
             >
               <DoubleChevronRightIcon />
             </button>
           </div>
           <div>
-            <div className="mb-10 text-5xl md:text-8xl text-gray-50 font-extrabold tracking-wider">
-              MAKERS <br/>
+            <div className="mb-10 text-5xl font-extrabold tracking-wider md:text-8xl text-gray-50">
+              MAKERS
+              {' '}
+              <br />
               LIFE
-              <div className="block md:inline-block w-full md:w-1/2 break-normal
-                whitespace-pre-wrap text-base md:text-xl font-semibold md:font-bold tracking-normal">
-                A Renaissance <br className="hidden md:block" />
-                mission for <br className="hidden md:block" />
+              <div className="block w-full text-base font-semibold tracking-normal break-normal whitespace-pre-wrap md:inline-block md:w-1/2 md:text-xl md:font-bold"
+              >
+                A Renaissance
+                {' '}
+                <br className="hidden md:block" />
+                mission for
+                {' '}
+                <br className="hidden md:block" />
                 modern times
               </div>
             </div>
             <button
               type="button"
-              className="max-w-sm px-5 py-3 text-lg font-bold bg-gray-800 text-gray-50 focus:outline:none border border-black"
+              className="max-w-sm px-5 py-3 text-lg font-bold bg-gray-800 border border-black text-gray-50 focus:outline:none"
             >
               Weekly Note
             </button>
-            <div className="-z-10 absolute inset-0 bg-front-page bg-cover bg-opacity-25" />
-            <div className="-z-10 absolute inset-0 bg-black bg-opacity-25" />
+            <div className="absolute inset-0 bg-opacity-25 bg-cover -z-10 bg-front-page" />
+            <div className="absolute inset-0 bg-black bg-opacity-25 -z-10" />
           </div>
         </div>
       </main>
