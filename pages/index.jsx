@@ -40,8 +40,7 @@ export default function Home() {
               {' '}
               <br />
               LIFE
-              <div className="block w-full text-base font-semibold tracking-normal break-normal whitespace-pre-wrap md:inline-block md:w-1/2 md:text-xl md:font-bold"
-              >
+              <div className="block w-full text-base font-semibold tracking-normal break-normal whitespace-pre-wrap md:inline-block md:w-1/2 md:text-xl md:font-bold">
                 A Renaissance
                 {' '}
                 <br className="hidden md:block" />
